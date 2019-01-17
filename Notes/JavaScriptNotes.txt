@@ -1,0 +1,76 @@
+jQuery is a
+     - Massive free javascript library. It is not a programming language in it's own right, it is a javascript library
+     - It helps working with the DOM a lot easier.
+     - Working with animations and event handling a lot easier
+     - Makes life a lot easier by writing less code.
+     
+jQuery chaining
+    - Beneficial because it essential is applying different methods or affects to an element on a single line.
+    
+
+----------------------------------------------------------------------------------------------------------------------------------------
+    
+    
+/* Javascript is one the three core languages for websites. It's main responsibility is to add behvior and 
+   interactivity to your website. Cannot communicate directly with a database. It is a client side language meaning that it runs 
+   directly in your computer browser.
+    
+   There are 3 ways to add js code to your webpage. 
+        - Adding js code inside the head section inside the html document
+        - Adding js code inside the body section of your html document
+        - Writing js code in an external file and import it to yoru html document.
+*/
+
+/* HOW TO USE JQUERY
+
+    - basic structure for jQuery, grab a selector then performing some action on it
+        - $(selector).action()
+        
+  document.ready, this makes the function available after the 
+  document structure is ready. It is always a good practice to have 
+  all the jQuery events and functions inside this document.ready method
+  
+  The proper way to now writing the $(document).ready(function() {})
+  is now simply by writing $(function() {})
+  
+$(function() {
+    $('h1').hide(500).show(500) //will hide the h1 element, 500 will make the h1 tag fade out 
+
+    //an alternate method to the above jQuery action is 
+    $('h1').slideUp(1000).slideDown(1000);
+
+    //select element using id
+    $("#main").css({
+        color: 'red',
+        fontSize: 25
+    });
+
+    //select an element using class
+    $(".content").css({
+        color: 'blue',
+        fontSize: 50
+    });
+
+
+    //implementing an action
+    $("h1").click(function() {
+        $(".content").css({
+            color: 'green',
+            fontSize: 50
+        });
+    });
+});
+
+
+
+  $(window).on("load", functoon() {}); Window on load event fires
+    when all the content on the page is fully loaded including the DOM, 
+    images, and content.
+    
+    $(function() {}) loads a bit earlier then $(window).on("load", functoon() {}). This loads only when the DOM is ready. 
+
+$(window).on("load", function() {
+   alert("window is loaded") 
+});
+
+*/

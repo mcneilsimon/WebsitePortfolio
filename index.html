@@ -1,0 +1,662 @@
+<!--Doctype is not an HTML tag, it is a description about which version of html is being used in our webpage
+The html means that this page is writen in html 5
+-->
+<!DOCTYPE html>
+<html lang="en">
+<!--all meta information goes inside the head tag. Meta tags provide important information to a webpage -->
+
+<head>
+    <!-- important meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- meta tag to allow websites to be compatible in internet explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title -->
+    <title>My Creative Website</title>
+    
+    <!-- Basic SEO -->
+    <meta name="description" content="Creative website development with html5, css3, jQuery & bootstrap framework">
+    <meta name="keywords" content="html5, CSS3, JQuery, Bootstrap, Web Design, Web Development, Responsive website, Creative Website">
+    
+    <!-- Icon for the title, this is called Favicon; rel stands for relationship.
+            "shortcut icon" is the attribute name for the rel.
+          -->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+
+    <!-- Link to import the font we want from google fonts, this should be before the css links because we are going
+        to be using google fonts inside the style.css -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100i,200,300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome/css/fontawesome-all.min.css">
+
+    <!-- Bootstrap CSS, make sure this is before the style.css file -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+    <!-- Owl Carousel Css -->
+    <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css">
+
+    <!-- Responsive Tabs CSS -->
+    <link rel="stylesheet" href="css/responsive-tabs/responsive-tabs.min.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup/magnific-popup.min.css">
+
+    <!-- Animates CSS -->
+    <link rel="stylesheet" href="css/animate/animate.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive Css -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<!-- the body element contains all the visible content to the user -->
+
+<!-- The offset value is what species the number of pixels to specify when to offset a value instead of the default attr of 10px -->
+
+<body data-spy="scroll" data-target=".navbar" data-offset="75">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <!-- &nbsp; is simply just to put white space around the element -->
+        <div id="status">&nbsp;</div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="site-nav-wrapper">
+
+
+                    <div class="navbar-header">
+
+                        <!-- Mobile Menu Open Button -->
+                        <span id="mobile-nav-open-btn">&#9776;</span>
+
+                        <!-- Logo -->
+                        <a href="#home" class="navbar-brand smooth-scroll">
+                            <img class="img-logo-home" src="img/logo/simonlogoV4.png" alt="logo">
+                        </a>
+                    </div>
+
+                    <!-- Navigation Links, Main Menu -->
+                    <div class="container">
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav pull-right">
+                                <li><a class="smooth-scroll" href="#home">Home</a></li>
+                                <li><a class="smooth-scroll" href="#about">About</a></li>
+                                <li><a class="smooth-scroll" href="#skills">Skills</a></li>
+                                <!--<li><a class="smooth-scroll" href="#services">Services</a></li>-->
+                                <li><a class="smooth-scroll" href="#portfolio">Work</a></li>
+                                <!--<li><a class="smooth-scroll" href="#blog">Blog</a></li>-->
+                                <li><a class="smooth-scroll" href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Menu for when screen size is less then 768px -->
+                    <div id="mobile-nav">
+                        <!-- Mobile Menu Close Button -->
+                        <span id="mobile-nav-close-btn">&times;</span>
+
+
+                        <div id="mobile-nav-content">
+                            <ul class="nav">
+                                <li><a class="smooth-scroll" href="#home">Home</a></li>
+                                <li><a class="smooth-scroll" href="#about">About</a></li>
+                                <li><a class="smooth-scroll" href="#portfolio">Work</a></li>
+                                <li><a class="smooth-scroll" href="#blog">Blog</a></li>
+                                <li><a class="smooth-scroll" href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header Ends -->
+
+    <!-- Home Section -->
+    <section id="home">
+        <!-- Background Video -->
+        <video id="home-bg-video" poster="Video/Productive-Morning.jpg" autoplay loop muted>
+            <source src="Video/Productive-Morning.mp4" type="video/mp4">
+            <source src="Video/Productive-Morning.ogv" type="video/ogg">
+            <source src="Video/Productive-Morning.ogv" type="video/webm">
+        </video>
+
+        <!-- Overlay -->
+        <div id="home-overlay"></div>
+
+        <!--Home Content, the bootstrap text-center class center aligns everything for us -->
+        <div id="home-content">
+            <div id="home-content-inner" class="text-center">
+                <div id="home-heading">
+                    <h1 id="home-heading-1">Welcome</h1><br>
+                    <h1 id="home-heading-2">My Name Is Simon</h1><br>
+                    <h1 id="home-heading-3" class="my-website">And This is My Website</h1>
+                </div>
+                
+                <p><br></p>
+                <div id="home-btn">
+                    <a class="btn btn-general btn-home smooth-scroll" href="#about" title="Start Now" role="button">Start Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Arrow Down -->
+        <a href="#about" id="arrow-down" class="smooth-scroll">
+            <i class="fa fa-angle-down"></i>
+        </a>
+
+    </section>
+    <!-- Home section ends -->
+
+
+    <!--About section starts -->
+    <section id="about">
+
+        <!--About Part 1 Begins-->
+        <div id="about-01">
+            <div class="content-box-lg">
+                <div class="container">
+                    <div class="row">
+
+                        <!-- About left side -->
+                        <div class="col-md-6 col-sm-6 wow slideInLeft" data-wow-duration="1s">
+
+                            <div id="about-left">
+                                <div class="vertical-heading">
+                                    <h5>Who Am I</h5>
+                                    <h2>An <strong>Introudction</strong><br>About me</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- About right side -->
+                        <div class="col-md-6 col-sm-6 wow slideInRight" data-wow-duration="1s">
+
+                            <div id="about-right">
+                                <p>I am currently a 4th-year student studying at Sheridan College in the Honours Bachelor of Computer Science (Mobile Computing) program. I would classify myself as a highly motivated and accomplished individual that has a proven track record in programming, and problem solving. I possess the knowledge in several different programming and scripting languages, which gives me the advantage of developing various web and mobile applications to meet customer needs and expectations. During my spare time, I enjoy researching how to improve my iOS and Web Development skills.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!--About bottom row, background image -->
+                    <div class="row">
+                        <div class="col-md-12 wow fadeInUp" data-wow-duration="2s">
+                            <div id="about-bottom">
+                                <img src="img/about/about-blank-test.jpg" alt="About Us" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of part 1 for About section -->
+
+    </section>
+    <!--About Section Ends -->
+
+    <!-- Skills section -->
+    <section id="skills">
+        <div class="content-box-md-technical-skills">
+            <div class="container">
+
+                <!--First row in Skills  Section -->
+                <div class="row">
+
+                    <!-- Skills Left Side -->
+                    <div class="col-md-12 col-sm-12 wow slideInLeft" data-wow-duration="1s">
+
+                        <div id="team-left">
+                            <div class="vertical-heading-who who-we-are">
+                                
+                                <h2>Here Are A Few of My<br><strong>Technical</strong> Skills</h2>
+                            </div>
+                            <p></p>
+                        </div>
+
+                    </div>
+
+                    
+                </div>
+
+                <!-- Second Row Skill Progress Bar Secion -->
+                <div id="progress-elements">
+                    <!--Progress Bars -->
+                    <div class="row wow fadeInUp">
+                        <div class="col-md-6 col-sm-6">
+
+                            <!-- Skill 1 -->
+                            <div class="skill">
+                                <h4>HTML, CSS, JavaScript, BootStrap</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+
+                            <!-- Skill 2 -->
+                            <div class="skill">
+                                <h4>Swift Programing, iOS Development</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                        <span>85%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- If you add a column that goes beyond 12 in the previous then it will create a new row -->
+                        <div class="col-md-6 col-sm-6">
+
+                            <!-- Skill 3 -->
+                            <div class="skill">
+                                <h4>MySQL, SQLite, Azure, Firease</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                        <span>73%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+
+                            <!-- Skill 4 -->
+                            <div class="skill">
+                                <h4>Microsoft Utilites, Visual Studio</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Skill Section Ends -->
+
+    <!-- Statement Section -->
+    <section id="statement">
+
+        <div class="content-box-lg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 wow fadeIn">
+                        <div id="tech-statement" class="text-center">
+                            <h3><i class="fas fa-quote-left"></i> Any fool can write code that a computer can understand.<br> Good programmers write code that humans can understand. <i class="fas fa-quote-right"></i></h3>
+                            <p>- Martin Fowler - </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Statement Section Finished -->
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+
+        <div class="content-box-md-portfolio">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12 wow slideInLeft">
+                        <div class="vertical-heading">
+                            <h5>Find My Work</h5>
+                            <h2>Click On An Image To View Some of My<br><strong>Work </strong>That I've Developed Over The Years</h2>
+                        </div>
+                    </div>
+
+                    <!--Filter items -->
+                    <div class="col-md-12">
+                        <!-- Portfolio items filters -->
+                        <div id="isotope-filters">
+                            <button class="btn active" data-filter="*"><span>All</span></button>
+                            <button class="btn" data-filter=".mobile-web-apps"><span>Mobile Web Apps</span></button>
+                            <button class="btn" data-filter=".javascript"><span>JavaScript</span></button>
+                            <button class="btn" data-filter=".ios"><span>iOS Applications</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Portfolio Items Wrapper -->
+            <section id="portfolio-wrapper" class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                <div class="container-fluid">
+                    <div class="row no-gutters">
+                        <div id="isotope-container">
+                            <div class="col-md-3 col-sm-6 col-xs-12 mobile-web-apps">
+
+                                <!-- Portfolio Item 01 -->
+                                <div class="portfolio-item">
+                                    <a href="https://youtu.be/S11wkNBPxH0" target="_blank">
+                                        <img src="img/portfolio/ionic-mobile-web.png" class="img-responsive" alt="portfolio 01">
+                                        <div class="portfolio-item-overlay">
+                                            <div class="portfolio-item-details text-center">
+                                                <!-- Item Header -->
+                                                <h3>Ionic Final Project</h3>
+
+                                                <!--Item Strips -->
+                                                <span></span>
+
+                                                <!-- Item Description -->
+                                                <p>Click for Video Demo</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12 ios">
+
+                                <!-- Portfolio Item 02 -->
+                                <div class="portfolio-item">
+                                    <a href="https://www.youtube.com/watch?v=FBaCGEszHvc" target="_blank" title="Add Description">
+                                    <img src="img/portfolio/bru-restaurant.jpg" class="img-responsive" alt="portfolio 02">
+                                    
+                                    <div class="portfolio-item-overlay">
+                                        <div class="portfolio-item-details text-center">
+                                            <!-- Item Header -->
+                                            <h3>Software Engineer Final Project</h3>
+
+                                            <!--Item Strips -->
+                                            <span></span>
+
+                                            <!-- Item Description -->
+                                            <p>Click for Video Demo</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12 ios">
+
+                                <!-- Portfolio Item 03 -->
+                                <div class="portfolio-item">
+                                    <a href="https://github.com/mcneilsimon/ToDo-CoreData-App" target="_blank" title="Add Description">
+                                    <img src="img/portfolio/core-data-toDo.jpg" class="img-responsive" alt="portfolio 03">
+                                    
+                                    <div class="portfolio-item-overlay">
+                                        <div class="portfolio-item-details text-center">
+                                            <!-- Item Header -->
+                                            <h3>ToDo Core Data</h3>
+
+                                            <!--Item Strips -->
+                                            <span></span>
+
+                                            <!-- Item Description -->
+                                            <p>Click for Source Code</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12 mobile-web-apps">
+
+                                <!-- Portfolio Item 04 -->
+                                <div class="portfolio-item">
+                                    <a href="https://youtu.be/VM4aDajK_8E" target="_blank" title="Add Description">
+                                    <img src="img/portfolio/react-native.jpg" class="img-responsive" alt="portfolio 04">
+                                    
+                                    <div class="portfolio-item-overlay">
+                                        <div class="portfolio-item-details text-center">
+                                            <!-- Item Header -->
+                                            <h3>React Native Schedule Manager</h3>
+
+                                            <!--Item Strips -->
+                                            <span></span>
+
+                                            <!-- Item Description -->
+                                            <p>Click for Video Demo</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12 ios">
+
+                                <!-- Portfolio Item 05 -->
+                                <div class="portfolio-item">
+                                    <a href="https://github.com/mcneilsimon/Simple-Movie-Search-App" target="_blank" title="Add Description">
+                                    <img src="img/portfolio/imdb-movie.jpg" class="img-responsive" alt="portfolio 05">
+                                    
+                                    <div class="portfolio-item-overlay">
+                                        <div class="portfolio-item-details text-center">
+                                            <!-- Item Header -->
+                                            <h3>Movie Search iOS App</h3>
+
+                                            <!--Item Strips -->
+                                            <span></span>
+
+                                            <!-- Item Description -->
+                                            <p>Click for Source Code</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12 ios">
+
+                                <!-- Portfolio Item 06 -->
+                                <div class="portfolio-item">
+                                    <a href="https://github.com/mcneilsimon/HelloContacts.git" target="_blank" title="Add Description">
+                                    <img src="img/portfolio/hello-contacts.jpg" class="img-responsive" alt="portfolio 06">
+                                    
+                                    <div class="portfolio-item-overlay">
+                                        <div class="portfolio-item-details text-center">
+                                            <!-- Item Header -->
+                                            <h3>Contacts Manager iOS Application</h3>
+
+                                            <!--Item Strips -->
+                                            <span></span>
+
+                                            <!-- Item Description -->
+                                            <p>Click for Source Code</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12 javascript">
+
+                                <!-- Portfolio Item 07 -->
+                                <div class="portfolio-item">
+                                    <a href="https://www.youtube.com/watch?v=QFPrzl0cBvw" target="_blank" title="Add Description">
+                                    <img src="img/portfolio/add-remove-js.jpg" class="img-responsive" alt="portfolio 07">
+                                    
+                                    <div class="portfolio-item-overlay">
+                                        <div class="portfolio-item-details text-center">
+                                            <!-- Item Header -->
+                                            <h3>JavaScript Counter</h3>
+
+                                            <!--Item Strips -->
+                                            <span></span>
+
+                                            <!-- Item Description -->
+                                            <p>Click for Video Demo</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12 javascript">
+
+                                <!-- Portfolio Item 08 -->
+                                <div class="portfolio-item">
+                                    <a href="https://www.youtube.com/watch?v=G-Ojvw05kMU" target="_blank" title="Add Description">
+                                    <img src="img/portfolio/imdb-js.jpg" class="img-responsive" alt="portfolio 08">
+                                    
+                                    <div class="portfolio-item-overlay">
+                                        <div class="portfolio-item-details text-center">
+                                            <!-- Item Header -->
+                                            <h3>jQuery Mobile Movie Search</h3>
+
+                                            <!--Item Strips -->
+                                            <span></span>
+
+                                            <!-- Item Description -->
+                                            <p>Click for Video Demo</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <!-- Portfolio Ends -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+
+        <div class="content-box-md">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <!--Left Side -->
+                        <div id="contact-left">
+                            <div class="vertical-heading-get-in-touch">
+                                <h2>Get<br>In<strong> Touch</strong></h2>
+                                <p>If you wish to contact me for freelance work, employeement, or internship opportunities, feel free to reach out to me in any of the ways below.</p>
+                            </div>
+
+                            <div id="offices">
+                                <div class="row">
+
+                                    <!-- Address Two -->
+                                    <div class="col-md-6">
+                                        <div class="office">
+                                            <h4>Oakville, Ontario</h4>
+                                            <ul class="office-details">
+                                                <li><i class="fas fa-mobile-alt"></i><span>(905)-464-2344</span></li>
+                                                <li><i class="fas fa-envelope"></i><span>mcneils@sheridancollege.ca</span></li>
+                                                <li><i class="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/in/mcneils">https://www.linkedin.com/in/mcneils</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+                            <ul class="linkedIn-social-list">
+                                <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="mcneils"><a class="LI-simple-link" href='https://ca.linkedin.com/in/mcneils?trk=profile-badge'>Simon McNeil</a></div>
+                            </ul>-->
+                        </div>
+                    </div>
+
+                    <!-- Right Side -->
+                    <div class="col-md-6">
+                        <div id="contact-right">
+                            <img src="img/contact/rsz_quino-al-302041-unsplash.png" alt="logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Contact Section Finished -->
+
+    <!-- Google Map -->
+    <section id="google-map">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="map"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Google Map Ends -->
+
+    <!-- Footer Section -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        Copyright &copy; 2017 All Rights Reserved By <span>SIMON MCNEIL</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back To Top -->
+        <a href="#home" id="back-to-top" class="btn btn-sm btn-yellow btn-back-to-top smooth-scroll hidden-sm hidden-xs" title="home" role="button">
+            <i class="fas fa-angle-up"></i>
+        </a>
+
+    </footer>
+    <!-- Footer Section Ends -->
+
+    <!-- jQuery export script tag, make sure that this tag is always before the js/script tag -->
+    <script src="js/jquery.min.js"></script>
+
+
+    <!-- Bootstrap JS, this has to be after the jQuery script file, because bootstrap just jQuery -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Owl Carousel JS , order is important as to where this is placed! jquery library has to come first -->
+    <script src="js/owl-carousel/owl.carousel.min.js"></script>
+
+    <!-- LinkedIn Bage -->
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+    <!-- Waypoints -->
+    <script src="js/waypoints/jquery.waypoints.min.js"></script>
+
+    <!-- Responsive Tabs JS, this plugin has to come after jquery -->
+    <script src="js/responsive-tabs/jquery.responsiveTabs.min.js"></script>
+
+    <!-- Isotope -->
+    <script src="js/isotope/isotope.pkgd.min.js"></script>
+
+    <!-- Magnific Popup -->
+    <script src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Counter Up -->
+    <script src="js/counter-up/jquery.counterup.min.js"></script>
+
+    <!-- Google Map API For JS -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaaSRdaOX2yJow3QkNRMs48OWNmz4tVbk"></script>
+
+    <!-- Easing -->
+    <script src="js/easing/jquery.easing.1.3.min.js"></script>
+
+    <!-- WOW JS -->
+    <script src="js/wow/wow.min.js"></script>
+
+    <!-- Custom JS file, it is best to add the js script tag just before the end of the body closing tag because
+             we want the browser to first render all the content of the html page and then load the js file.
+          -->
+    <script src="js/script.js"></script>
+    
+</body>
+
+</html>

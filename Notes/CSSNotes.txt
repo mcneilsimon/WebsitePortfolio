@@ -1,0 +1,78 @@
+/* Cascading style sheets, Control the look and feel of web pages, apply one style to many elements. It format goes by,
+    - Selector
+    - Property
+    - Value
+
+There are 3 ways to apply css
+    - Inline style <h1 style="color: green; font-size:14px;>Heading</h1>
+    - Internal style sheet, create a style tag element inside the head
+    - External style sheet, create a css file and import with and href attribute inide a link tag
+*/
+
+
+/* CSS Positioning 
+
+    #parent_div {
+        width: 400px;
+        height: 400px;
+        background-color: red;
+        margin: 100px auto;   
+    }
+
+    #child_div {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+*/
+
+/*
+    h1 {
+
+        color: green;
+        font-size: 45px;
+        background-color: palegreen;
+        width: 250px;
+        height: 50px;
+        padding: 10px 10px 10px 10px;
+        border: 5px solid green;
+        margin: 20px 10px 60px 40px
+
+    } 
+*/
+
+/*
+    div p {
+        color: green;
+        font-size: 45px;
+        background-color: skyblue;
+    }
+*/
+
+/* CSS Classes and ID examples, 
+     - ID's are unique identifiers. 
+     - Classes are not uniquer. 
+     - You can have multiple classes inside a tag element but only one id identifier.
+
+
+    # is used to select an id idenfitier 
+
+    #main {
+        color: pink;
+        font: 25px;
+    }
+
+
+    To access elements with the class attribute you use the dot(.) 
+
+    .content {
+        color: black;
+        background-color: pink;
+        font-size: 20px;
+    }
+*/
+
+

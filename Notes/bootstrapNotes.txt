@@ -1,0 +1,28 @@
+Bootstrap is a free and open-source front-end web development framework for designing websites and web applications. It is a free collection of tools for creating websites and web applications. It is a powerful framework for faster and easier web development. It is the best tool in order to create mobile responsiveness websites.
+
+Boostrap is important because it can help
+    - Prevent repetition between projects
+    - Utilize responsive design
+    - Add consistency to design and code
+    - Quickly and easily prototype new designs
+    - Ensure cross-browser compatibility
+    
+    
+Bootstrap Grid System
+    - The Bootstrap grid system is the fastest and easiest way to create webpage layouts.
+    - Allows up 12 columns across the web page
+    - Is responsive and columns will adjust to the screen size, depending on the columns
+    
+Bootstrap Grid System is made up of three things
+    - Container
+    - Row, you add as many rows as you want
+    - Columns
+    - It's basic structure is that it needs a container to hold all its width and columns
+    - It's structure starts out with a div class called container, then a div with class row and then a div with a 
+      number of columns. Number of columns should always add up to 12 rows.
+    - It's grid options are made of 4 options:
+      1. .col-lg: Large desktop, 1200px and up
+      2. .col-md: Desktop, 992px and Up
+      3. .col-sm: Tablet 768px and up
+      4. .col-xs: Phone less than 768px
+    - You can combine these columns to get different column width on different screen sizes
