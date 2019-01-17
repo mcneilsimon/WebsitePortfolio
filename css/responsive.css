@@ -110,6 +110,10 @@
 @media (min-width: 992px) and (max-width: 1199px) {
 
 
+    .phone-image {
+        display: none;
+    }
+    
     /* Navigation */
     .site-nav-wrapper {
         padding: 0;
@@ -130,6 +134,8 @@
     .service-tab p {
         line-height: 20px;
     }
+    
+    
 
 }
 
@@ -224,6 +230,11 @@
 
     ul.office-details li i {
         width: 25px;
+    }
+    
+    /* Deletes Phone Image */
+    .phone-image {
+        display: none;
     }
 }
 
@@ -496,6 +507,11 @@
     ul.social-list {
         margin-bottom: 40px;
     }
+    
+    /* Deletes Phone Image */
+    .phone-image {
+        display: none;
+    }
 }
 
 /* Extra Small Devices for 480px or less than (Portrait Phones & Smaller Devices) */
@@ -537,6 +553,11 @@
     .testimonial .stars {
         font-size: 13px;
     }
+    
+    /* Deletes Phone Image */
+    .phone-image {
+        display: none;
+    }
 }
 
 /* Extra Small Devices for 320px or less than (Portrait Phones & Smaller Devices, iPhone 5 Size) */
@@ -551,5 +572,10 @@
     .testimonial .stars {
         font-size: 10px;
         margin-left: -8px;
+    }
+    
+    /* Deletes Phone Image */
+    .phone-image {
+        display: none;
     }
 }
